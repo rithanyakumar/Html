@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+
+<style>
+      {
+    margin: 0; padding: 0;
+}
+html, body, #container {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    background: white;
+}
+.half {
+    height: 50%;
+}
+.half:first-child {
+    background: green;
+}
+.half:last-child {
+    background: grey;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style
+  <title></title>
+  <meta charset = "UTF-8" />
+
+</head>
+
+<body>
+
+<div id="container">
+    <header></header>
+    <main>
+        <section class="half"> 
+		<h1 align="center"><big>Awesome Online videos</big></h1>
+		<img src="http://jenniferdebruin.com/wp-content/uploads/2013/03/Video-logo.jpg"  style="width:200px;height:200px;">
+		</section>
+        <section class="half">
+		
+		<div style="text-align:center"> 
+  <button onclick="play()">Play</button> 
+  <button onclick="pause()">Pause</button> 
+ 
+  <br><br>
+  <video id="v1" width="420" controls>
+   
+  <source src="/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.ogg" type="video/ogg">
+  
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("v1"); 
+
+function play() { 
+  myVideo.play();
+} 
+
+function pause() { 
+   myVideo.pause(); 
+} 
+	</script> 	
+	
+	</section>
+    </main>
+</div>
+
+
+
+</body>
+</html>
